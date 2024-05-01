@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - iGaming</title>
+  <link rel="stylesheet" href="login.css"> <!-- Separate CSS file for login page -->
+  <script src="validation.js" defer></script> <!-- Include the validation script -->
+</head>
+<body>
+<header>
+    <img src="file:///C:/Users/H-Info/Downloads/logo.jpg" class="logo" alt="iGaming Logo">
+</header>
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="offers.html">Offers</a>
+  <a href="register.html">Register</a>
+  <a href="booking.html">Book a Seat</a>
+  <a href="login.html">Login</a>
+</div>
+
+<div class="container">
+  <form action="login.php" method="POST" onsubmit="return validateForm();"> <!-- Added onsubmit attribute to call validateForm() -->
+    <h2>Login</h2>
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Login</button>
+  </form>
+</div>
+
+</body>
+</html>
